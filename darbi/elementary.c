@@ -2,15 +2,21 @@
 #include <stdio.h>
 int i;
 int treshold = 1;
+int precentage = 101;
 void reset () {
   printf("\033[0m");
 }
 int main(){
-	//printf("okc");
-	for(i = 1; i<10; i++){
+	printf("NASA HACKING STARTED");
+	for(i = 1; i<precentage; i++){
 		sleep(treshold);
 		printf("\033[1;31m");
-		printf("this is number: %d\n", i);
+		printf("Hacked: %d %%", i);
+		printf("\n");
 	}
+	printf("\x1b[32m");
+	printf("NASA has been hacked succesfull! \n");
 	reset;
+	printf("\033[0m");
+
 }
